@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/* font-family: 'Handlee', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+/* font-family: 'Quantico', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #2B3A55;
+}
+
+.mainContainer {
+    background-color: #2B3A55;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer .innerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #CE7777;
+    padding: 10px;
+    border: 2px solid #CE7777;
+    border-radius: 10px;
+}
+
+.innerContainer .imgCont {
+    padding: 2px;
+    margin: 1px;
+}
+
+.imgCont img {
+    padding: 1px;
+}
+
+.innerContainer .headingCont {
+    padding: 2px;
+    margin: 1px;
+}
+
+.headingCont .heading {
+    padding: 2px;
+    text-align: center;
+}
+
+.heading p {
+    color: #2B3A55;
+    padding: 1px;
+    font-family: 'Righteous', cursive;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.nCont, .idCont, .passwordCont, .btnCont {
+    margin: 3px;
+    padding: 3px;
+}
+
+input {
+    outline: none;
+    background-color: #F2E5E5;
+    border-radius: 10px;
+    border: 1.78px solid #F2E5E5;
+    padding: 4px;
+    font-family: 'Handlee', cursive;
+    font-size: 1em;
+    color: #000000;
+}
+
+.btnCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCont button {
+    padding: 2px 4px;
+    background-color: #2B3A55;
+    border: 2px solid #2B3A55;
+    border-radius: 5px;
+}
+
+.btnCont button span {
+    padding: 1px;
+    color: #E8C4C4;
+    font-family: 'Quantico', sans-serif;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.btnCont button:hover {
+    box-shadow: 0 0 7px #E8C4C4;
+}

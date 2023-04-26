@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+/* font-family: 'Rubik Bubbles', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+/* font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+/* font-family: 'Cairo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+/* font-family: 'Prosto One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+/* font-family: 'East Sea Dokdo', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+/* font-family: 'Ubuntu Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+/* font-family: 'Andika', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+/* font-family: 'Teko', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    background-color: #404258;
+}
+
+.layer {
+    position: fixed;
+    background-color: #181D31;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer .innerLayer {
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+    background-color: #EAEAEA;
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showImgBigCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    width: 70%;
+    background-color: #B2B2B2;
+}
+
+.showImgBigCont img {
+    width: 300px;
+    padding: 2px;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer .topContainer {
+    width: 98.8vw;
+    height: 7%;
+    padding: 5px;
+    background-color: #404258;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.topContainer .mainAvatarContainer {
+    padding: 1px;
+    width: 50%;
+}
+
+.mainAvatarContainer .mainUser {
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainUser .mainImgCont {
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB100;
+}
+
+.mainImgCont img {
+    width: 40px;
+    height: auto;
+}
+
+.mainNameCont {
+    margin: 0 2px;
+}
+
+.mainNameCont .mName {
+    padding: 0.4px;
+}
+
+.mName p {
+    font-family: 'Andika', sans-serif;
+    font-size: 0.9em;
+    color: #F1F6F5;
+}
+
+.mainNameCont .mId {
+    padding: 0.3px;
+}
+
+.mId p {
+    font-family: 'Teko', sans-serif;
+    font-size: 0.8em;
+    color: #FFFFFF;
+}
+
+.topContainer .heading {
+    padding: 2px;
+    background-color: #404258;
+    width: 50%;
+}
+
+.heading div {
+    padding: 3px;
+}
+
+.heading div p {
+    color: #F7F7F7;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.mainContainer .bottomContainer {
+    background-color: #404258;
+    width: 98.8vw;
+    height: 93%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomContainer .leftContainer {
+    background-color: #50577A;
+    width: 30%;
+    height: 85vh;
+    padding: 3px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-left: 2px solid #50577A;
+    border-top: 2px solid #50577A;
+    border-bottom: 2px solid #50577A;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+.leftContainer::-webkit-scrollbar {
+    width: 5px;
+    background-color: #EEEEEE;
+}
+
+.leftContainer::-webkit-scrollbar-thumb {
+    background-color: #2B3A55;
+}
+
+.leftContainer .webOptionsCont {
+    background: #3C4048;
+    padding: 2px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 2px solid #3C4048;
+}
+
+.webOptionsCont .webOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.webOptions div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    border: 2px solid #3C4048;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0 4px;
+    width: 18px;
+    height: 20px;
+}
+
+.leftContainer .clientCont {
+    background-color: #474E68;
+    padding: 2px;
+    border-radius: 4px;
+    border: 2px solid #474E68;
+    margin: 4px 1px;
+}
+
+.clientCont .client {
+    background-color: #474E68;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.client:hover {
+    background-color: #50577A;
+}
+
+.client .clientImgCont {
+    padding: 2px;
+    width: 30%;
+    margin: 2px;
+}
+
+.clientImgCont img {
+    border-radius: 17px;
+    padding: 1px;
+    width: 100%;
+    height: auto;
+}
+
+.client .clientNameCont {
+    padding: 2px;
+    width: 60%;
+    margin: 1px;
+}
+
+.clientNameCont .name {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    margin: 0.5px;
+}
+
+.name .username {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.05em;
+    color: #F1F6F5;
+}
+
+.name .userid {
+    font-family: 'Raleway', sans-serif;
+    color: #EEEEEE;
+    font-size: 0.9em;
+}
+
+.client .optionCont {
+    display: none;
+    width: 10%;
+    padding: 1px;
+}
+
+.client:hover .optionCont {
+    display: block;
+}
+
+.optionCont .optionsBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 23px;
+    border-radius: 140px;
+}
+
+.optionCont .optionsBtn:hover {
+    background-color: #EAEAEA;
+}
+
+.optionCont .optionsBtn:hover div {
+    color: #000000;
+}
+
+.optionsBtn div {
+    position: relative;
+    color: #EAEAEA;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.bottomContainer .rightContainer {
+    background-color: #6B728E;
+    width: 70%;
+    height: 85vh;
+    padding: 3px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: 2px solid #6B728E;
+    border-top: 2px solid #6B728E;
+    border-bottom: 2px solid #6B728E;
+}
+
+.rightContainer .topHead {
+    background-color: #181818;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.topHead .header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .imgCont {
+    padding: 2px;
+    width: 20%;
+    margin: 1px;
+}
+
+.imgCont img {
+    border-radius: 2px;
+}
+
+.topHead .tpdetails {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1px;
+    margin: 1px;
+}
+
+.tpdetails div p {
+    color: #EFEFEF;
+    font-family: 'Prosto One', cursive;
+    padding: 1px;
+    margin: 0.6px;
+}
+
+.tpdetails .name p {
+    font-size: 1.1em;
+}
+
+.tpdetails .id p {
+    font-size: 0.6em;
+}
+
+.tpdetails .date p {
+    font-size: 0.6em;
+}
+
+.msgCont {
+    background: #3c404842;
+    margin: 1px;
+    padding: 2px;
+    height: 57%;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.msgCont::-webkit-scrollbar {
+    width: 6.5px;
+    background: whitesmoke;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.msgCont::-webkit-scrollbar-thumb {
+    background-color: #0A2647;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.msgCont .noteCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    margin: 1px;
+}
+
+.noteCont .note {
+    background-color: #FFD372;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 0.5px;
+    width: max-content;
+}
+
+.note p {
+    color: #000000;
+    font-size: 1em;
+    font-family: 'East Sea Dokdo', cursive;
+    padding: 0.7px;
+}
+
+.messages {
+    padding: 1px;
+    margin: 0.5px;
+}
+
+.messages .receivedMsg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.messages .sendMsg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.messages .msgBox {
+    background-color: #EAEAEA;
+    padding: 1px;
+    margin: 0.5px;
+    width: max-content;
+    border-radius: 4px;
+}
+
+.msgBox .cName {
+    font-size: 0.66em;
+    color: #000000;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: right;
+}
+
+.msgBox .cMsg {
+    font-size: 0.9em;
+    color: #000000;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sendMsgContainer {
+    padding: 0.5px;
+    margin: 0.5px;
+}
+
+.sendMsgCont_inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.sendMsgArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+    padding: 2px;
+    margin: 1px;
+}
+
+.sendMsgArea textarea {
+    resize: none;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.9em;
+    height: 30px;
+    max-height: 100px;
+    background-color: #06283D;
+    border: 2px solid #06283D;
+    color: #EAEAEA;
+    scroll-behavior: smooth;
+}
+
+.sendMsgArea textarea::placeholder {
+    color: #6B728E
+}
+
+.sendMsgArea textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+.sendMsgBtn {
+    padding: 2px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+}
+
+.sendMsgBtn button {
+    background-color: #000000;
+    padding: 4px 5px;
+    border-radius: 2px;
+    border: 2px solid #000000;
+}
+
+.sendMsgBtn button span {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1em;
+    padding: 1px;
+}

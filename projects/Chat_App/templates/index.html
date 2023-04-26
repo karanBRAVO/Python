@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../static/assets/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Chat App using FLASK PYTHON</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="../static/index..js"></script>
+</head>
+
+<body>
+    <div class="layer" id="showBigImgLayer">
+        <div class="innerLayer">
+            <div class="showImgBigCont">
+                <img src="" alt="" id="zoomImg">
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="topContainer">
+            <div class="mainAvatarContainer">
+                <div class="mainUser">
+                    <div class="mainImgCont">
+                        <img src="../static/assets/avatar/mainAvatars/main6.svg" alt="" id="mainImg">
+                    </div>
+                    <div class="mainNameCont">
+                        <div class="mName">
+                            <p>Karan Yadav</p>
+                        </div>
+                        <div class="mId">
+                            <p>id: 100:001:100:98</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <div>
+                    <p>CHAT APP</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottomContainer">
+            <div class="leftContainer">
+                <div class="webOptionsCont">
+                    <div class="webOptions">
+                        <div class="searchBtn">
+                            <img src="../static/assets/img/search.svg" alt="" title="search">
+                        </div>
+                        <div class="closeBtn">
+                            <img src="../static/assets/img/close.svg" alt="" title="terminate this session">
+                        </div>
+                        <div class="screenShotBtn">
+                            <img src="../static/assets/img/screenshot.svg" alt="" title="take a screenshot">
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar1.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-1</p>
+                                <p class="userid">id: 100:230:90:234</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar2.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-2</p>
+                                <p class="userid">id: 192.168.43.235</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar3.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-3</p>
+                                <p class="userid">id: 100:34:12:114</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar4.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-4</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar5.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-5</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar6.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-6</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar7.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-7</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar8.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-8</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar9.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-9</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar10.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-10</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientCont">
+                    <div class="client">
+                        <div class="clientImgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar11.svg" alt="">
+                        </div>
+                        <div class="clientNameCont">
+                            <div class="name">
+                                <p class="username">Avatar-11</p>
+                                <p class="userid">id: 000:210:90:214</p>
+                            </div>
+                        </div>
+                        <div class="optionCont">
+                            <div class="optionsBtn">
+                                <div style="top: 9px;">.</div>
+                                <div style="top: -4px;">.</div>
+                                <div style="top: -17px;">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="topHead">
+                    <div class="header">
+                        <div class="imgCont">
+                            <img src="../static/assets/avatar/friendAvatars/avatar1.svg" alt="">
+                        </div>
+                        <div class="tpdetails">
+                            <div class="name">
+                                <p>Avatar-1</p>
+                            </div>
+                            <div class="id">
+                                <p>id: 100:230:90:234</p>
+                            </div>
+                            <div class="date">
+                                <p>December-31-2022 | 6:17 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="msgCont">
+                    <div class="noteCont">
+                        <div class="note">
+                            <p>your messages are end-to-end encrypted.</p>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="receivedMsg">
+                            <div class="msgBox">
+                                <div class="cName">
+                                    <p>Avatar-1</p>
+                                </div>
+                                <div class="cMsg">
+                                    <p>hi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sendMsg">
+                            <div class="msgBox">
+                                <div class="cName">
+                                    <p>karan</p>
+                                </div>
+                                <div class="cMsg">
+                                    <p>hello av-1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sendMsgContainer">
+                    <div class="sendMsgCont_inner">
+                        <div class="sendMsgArea">
+                            <textarea name="send" id="sendMessage" cols="30" rows="10"
+                                placeholder="Type your message here..."></textarea>
+                        </div>
+                        <div class="sendMsgBtn">
+                            <button>
+                                <span>-></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
